@@ -29,26 +29,28 @@
         private void InitializeComponent()
         {
             this.Start = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Help = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(158, 21);
+            this.Start.Location = new System.Drawing.Point(150, 30);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(300, 74);
             this.Start.TabIndex = 0;
             this.Start.Text = "Start / Stop";
             this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // button2
+            // Help
             // 
-            this.button2.Location = new System.Drawing.Point(257, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Help.Location = new System.Drawing.Point(250, 218);
+            this.Help.Name = "Help";
+            this.Help.Size = new System.Drawing.Size(75, 23);
+            this.Help.TabIndex = 1;
+            this.Help.Text = "Help";
+            this.Help.UseVisualStyleBackColor = true;
+            this.Help.Click += new System.EventHandler(this.Help_Click);
             // 
             // Main
             // 
@@ -56,7 +58,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(582, 253);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Help);
             this.Controls.Add(this.Start);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Main";
@@ -69,7 +71,7 @@
         #endregion
 
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Help;
     }
 }
 

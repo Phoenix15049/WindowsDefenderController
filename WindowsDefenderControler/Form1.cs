@@ -21,5 +21,15 @@ namespace WindowsDefenderControler
         {
 
         }
+
+        private void Start_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Help_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
