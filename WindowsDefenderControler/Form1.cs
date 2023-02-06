@@ -14,6 +14,8 @@ namespace WindowsDefenderControler
 {
     public partial class Main : Form
     {
+
+        //Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender
         public Main()
         {
             InitializeComponent();
@@ -22,7 +24,8 @@ namespace WindowsDefenderControler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            RegistryKey rk = Registry.CurrentUser.CreateSubKey("RegistrySetValueExample");
+            RegistryKey rk = Registry.CurrentUser.CreateSubKey("Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows Defender");
+            rk.SetValue("1", 0x00000001, RegistryValueKind.QWord);
         }
 
         private void Start_Click(object sender, EventArgs e)
