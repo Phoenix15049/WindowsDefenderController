@@ -34,9 +34,9 @@
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(150, 30);
+            this.Start.Location = new System.Drawing.Point(145, 30);
             this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(300, 74);
+            this.Start.Size = new System.Drawing.Size(300, 75);
             this.Start.TabIndex = 0;
             this.Start.Text = "Start / Stop";
             this.Start.UseVisualStyleBackColor = true;
@@ -44,9 +44,9 @@
             // 
             // Help
             // 
-            this.Help.Location = new System.Drawing.Point(250, 218);
+            this.Help.Location = new System.Drawing.Point(250, 212);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(75, 23);
+            this.Help.Size = new System.Drawing.Size(90, 30);
             this.Help.TabIndex = 1;
             this.Help.Text = "Help";
             this.Help.UseVisualStyleBackColor = true;
