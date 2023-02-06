@@ -22,7 +22,7 @@ namespace WindowsDefenderControler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            RegistryKey rk = Registry.CurrentUser.CreateSubKey("RegistrySetValueExample");
         }
 
         private void Start_Click(object sender, EventArgs e)
