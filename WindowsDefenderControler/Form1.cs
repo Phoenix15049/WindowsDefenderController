@@ -24,7 +24,7 @@ namespace WindowsDefenderControler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            RegistryKey rk = Registry.CurrentUser.CreateSubKey("Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows Defender");
+            
             
         }
 
