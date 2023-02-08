@@ -23,11 +23,7 @@ namespace WindowsDefenderControler
         
         static RegistryKey createAllSubkey(string completeSubkey, RegistryKey rootreg)
         {
-            RegistryKey _rtrn = null;
-            StringBuilder sb = new StringBuilder();
-            var stepreg = rootreg;
-            var stestr = "";
-            foreach (var item in completeSubkey.Split('\\'))
+            
             {
                 if (item != "")
                 {
