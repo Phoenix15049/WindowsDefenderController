@@ -70,7 +70,7 @@ namespace WindowsDefenderControler
         {
             var rootreg = Registry.CurrentUser; //Registry.LocalMachine
 
-            var str = @"SOFTWARE\Test\subkey1\subkey2\subkey3";
+            var str = @"Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Test\subkey1\subkey2\subkey3";
             var myRegistry = createAllSubkey(str, rootreg);
 
             var keyval = myRegistry.GetValue("log", "0").ToString();
