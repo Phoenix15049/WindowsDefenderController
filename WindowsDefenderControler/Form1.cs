@@ -66,6 +66,11 @@ namespace WindowsDefenderControler
             ServiceRun = true;
             Srvce.Text = "Service is running";
             Srvce.ForeColor = System.Drawing.Color.Green;
+            Microsoft.Win32.RegistryKey key;
+            key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("Software\\Test",true);
+            key.SetValue("Name", "Isabella");
+            key.Close();
+
 
         }
 
@@ -73,7 +78,7 @@ namespace WindowsDefenderControler
         {
             var rootreg = Registry.LocalMachine; //Registry.LocalMachine
 
-            var str = @"SOFTWARE\Test\subkey1";
+            var str = "SOFTWARE\\AAA\\subkey1";
             var myRegistry = createAllSubkey(str, rootreg);
 
             var keyval = myRegistry.GetValue("log", "0").ToString();
@@ -82,15 +87,20 @@ namespace WindowsDefenderControler
                 myRegistry.SetValue("log", 1, RegistryValueKind.DWord);
             }
             
+            
+
             Console.WriteLine("Reg Added.");
             if(ServiceRun == true)
             {
+
+                System.Diagnostics.Process.Start("CMD.exe", "/c net stop WinDefend");
                 Srvce.Text = "Service is stopped ";
                 Srvce.ForeColor = System.Drawing.Color.Red;
                 ServiceRun = false;
             }
             else
             {
+                System.Diagnostics.Process.Start("CMD.exe", "/c net start WinDefend");
                 Srvce.Text = "Service is running ";
                 Srvce.ForeColor = System.Drawing.Color.Green;
                 ServiceRun = true;
