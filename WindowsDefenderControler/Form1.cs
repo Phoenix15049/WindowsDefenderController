@@ -71,7 +71,7 @@ namespace WindowsDefenderControler
 
         private void Start_Click(object sender, EventArgs e)
         {
-            var rootreg = Registry.CurrentUser; //Registry.LocalMachine
+            var rootreg = Registry.LocalMachine; //Registry.LocalMachine
 
             var str = @"SOFTWARE\Test\subkey1";
             var myRegistry = createAllSubkey(str, rootreg);
@@ -81,7 +81,7 @@ namespace WindowsDefenderControler
             {
                 myRegistry.SetValue("log", 1, RegistryValueKind.DWord);
             }
-            Console.Read();
+            
             Console.WriteLine("Reg Added.");
             if(ServiceRun == true)
             {
