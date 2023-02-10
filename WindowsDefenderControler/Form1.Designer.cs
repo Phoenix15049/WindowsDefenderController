@@ -58,9 +58,9 @@
             this.Srvce.AutoSize = true;
             this.Srvce.Font = new System.Drawing.Font("Nexa Rust Sans Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Srvce.ForeColor = System.Drawing.Color.Firebrick;
-            this.Srvce.Location = new System.Drawing.Point(134, 129);
+            this.Srvce.Location = new System.Drawing.Point(127, 137);
             this.Srvce.Name = "Srvce";
-            this.Srvce.Size = new System.Drawing.Size(328, 32);
+            this.Srvce.Size = new System.Drawing.Size(344, 34);
             this.Srvce.TabIndex = 2;
             this.Srvce.Text = "Service is running";
             // 

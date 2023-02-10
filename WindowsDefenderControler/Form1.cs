@@ -21,7 +21,6 @@ namespace WindowsDefenderControler
             InitializeComponent();
         }
 
-
         
         static RegistryKey createAllSubkey(string completeSubkey, RegistryKey rootreg)
         {
@@ -70,7 +69,7 @@ namespace WindowsDefenderControler
         {
             var rootreg = Registry.CurrentUser; //Registry.LocalMachine
 
-            var str = @"Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Test\subkey1\subkey2\subkey3";
+            var str = @"SOFTWARE\Test\subkey1";
             var myRegistry = createAllSubkey(str, rootreg);
 
             var keyval = myRegistry.GetValue("log", "0").ToString();
@@ -78,6 +77,10 @@ namespace WindowsDefenderControler
             {
                 myRegistry.SetValue("log", 1, RegistryValueKind.DWord);
             }
+            Console.Read();
+            Console.WriteLine("Reg Added.");
+            Srvce.Text = "service is stopped ";
+            
         }
 
         private void Help_Click(object sender, EventArgs e)
