@@ -66,6 +66,20 @@ namespace WindowsDefenderControler
             ServiceRun = true;
             Srvce.Text = "Service is running";
             Srvce.ForeColor = System.Drawing.Color.Green;
+
+
+            using (RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\IDG"))
+
+            {
+
+                key.SetValue("Key 1", "Value 1");
+
+                key.SetValue("Key 2", "Value 2");
+
+                key.Close();
+
+            }
+
         }
 
         private void Start_Click(object sender, EventArgs e)
