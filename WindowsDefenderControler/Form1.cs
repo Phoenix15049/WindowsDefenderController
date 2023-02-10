@@ -14,7 +14,7 @@ namespace WindowsDefenderControler
 {
     public partial class Main : Form
     {
-
+        bool ServiceRun;
         //Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender
         public Main()
         {
@@ -28,6 +28,7 @@ namespace WindowsDefenderControler
             StringBuilder sb = new StringBuilder();
             var stepreg = rootreg;
             var stestr = "";
+            
             foreach (var item in completeSubkey.Split('\\'))
             {
                 if (item != "")
@@ -62,7 +63,9 @@ namespace WindowsDefenderControler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            ServiceRun = true;
+            Srvce.Text = "Service is Running";
+            Srvce.ForeColor = System.Drawing.Color.Green;
         }
 
         private void Start_Click(object sender, EventArgs e)
@@ -79,7 +82,18 @@ namespace WindowsDefenderControler
             }
             Console.Read();
             Console.WriteLine("Reg Added.");
-            Srvce.Text = "service is stopped ";
+            if(ServiceRun == true)
+            {
+                Srvce.Text = "service is stopped ";
+                Srvce.ForeColor = System.Drawing.Color.Red;
+                ServiceRun = false;
+            }
+            else
+            {
+                Srvce.Text = "service is stopped ";
+                Srvce.ForeColor = System.Drawing.Color.Red;
+                ServiceRun = false;
+            }
             
         }
 
