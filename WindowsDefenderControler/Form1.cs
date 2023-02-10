@@ -64,7 +64,7 @@ namespace WindowsDefenderControler
         private void Form1_Load(object sender, EventArgs e)
         {
             ServiceRun = true;
-            Srvce.Text = "Service is Running";
+            Srvce.Text = "Service is running";
             Srvce.ForeColor = System.Drawing.Color.Green;
         }
 
@@ -84,15 +84,15 @@ namespace WindowsDefenderControler
             Console.WriteLine("Reg Added.");
             if(ServiceRun == true)
             {
-                Srvce.Text = "service is stopped ";
+                Srvce.Text = "Service is stopped ";
                 Srvce.ForeColor = System.Drawing.Color.Red;
                 ServiceRun = false;
             }
             else
             {
-                Srvce.Text = "service is stopped ";
-                Srvce.ForeColor = System.Drawing.Color.Red;
-                ServiceRun = false;
+                Srvce.Text = "Service is running ";
+                Srvce.ForeColor = System.Drawing.Color.Green;
+                ServiceRun = true;
             }
             
         }
