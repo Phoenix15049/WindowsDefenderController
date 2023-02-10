@@ -67,57 +67,6 @@ namespace WindowsDefenderControler
             Srvce.Text = "Service is running";
             Srvce.ForeColor = System.Drawing.Color.Green;
 
-
-            //using (RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\IDG"))
-
-            //{
-
-            //    key.SetValue("Key 1", "Value 1");
-
-            //    key.SetValue("Key 2", "Value 2");
-
-            //    key.Close();
-
-            //}
-
-
-
-
-            // Create a subkey named Test9999 under HKEY_CURRENT_USER.
-            RegistryKey test9999 =
-                Registry.CurrentUser.CreateSubKey("Test9999");
-            // Create two subkeys under HKEY_CURRENT_USER\Test9999. The
-            // keys are disposed when execution exits the using statement.
-            using (RegistryKey
-                testName = test9999.CreateSubKey("TestName"),
-                testSettings = test9999.CreateSubKey("TestSettings"))
-            {
-                // Create data for the TestSettings subkey.
-                testSettings.SetValue("Language", "French");
-                testSettings.SetValue("Level", "Intermediate");
-                testSettings.SetValue("ID", 123);
-            }
-
-            // Print the information from the Test9999 subkey.
-            Console.WriteLine("There are {0} subkeys under {1}.",
-                test9999.SubKeyCount.ToString(), test9999.Name);
-            foreach (string subKeyName in test9999.GetSubKeyNames())
-            {
-                using (RegistryKey
-                    tempKey = test9999.OpenSubKey(subKeyName))
-                {
-                    Console.WriteLine("\nThere are {0} values for {1}.",
-                        tempKey.ValueCount.ToString(), tempKey.Name);
-                    foreach (string valueName in tempKey.GetValueNames())
-                    {
-                        Console.WriteLine("{0,-8}: {1}", valueName,
-                            tempKey.GetValue(valueName).ToString());
-                    }
-                }
-            }
-
-            
-
         }
 
         private void Start_Click(object sender, EventArgs e)
