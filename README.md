@@ -11,6 +11,7 @@ This program does not need to be installed. Just download the WindowsDefenederCo
 
 To use this program, just click on the activation or deactivation button to control your Windows Defender.
 
+![](https://github.com/Phoenix15049/WindowsDefenderController/blob/master/Assets/Windefenddemo.gif)
 
 
 ## Contributing
