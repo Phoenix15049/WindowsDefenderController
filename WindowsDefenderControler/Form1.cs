@@ -63,40 +63,27 @@ namespace WindowsDefenderControler
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DialogResult dr = new DialogResult();
+            dr = MessageBox.Show("Disabling Windows Defender Antivirus can increase the risk of your Windows receiving viruses. So try not to disable this antivirus as much as possible.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.None);
             ServiceRun = true;
             Srvce.Text = "Service is running";
             Srvce.ForeColor = System.Drawing.Color.Green;
-            Microsoft.Win32.RegistryKey key;
-            key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("Software\\Test",true);
-            key.SetValue("Name", "Isabella");
-            key.Close();
+           
 
 
         }
 
         private void Start_Click(object sender, EventArgs e)
         {
-            var rootreg = Registry.LocalMachine; //Registry.LocalMachine
-
-            var str = "SOFTWARE\\AAA\\subkey1";
-            var myRegistry = createAllSubkey(str, rootreg);
-
-            var keyval = myRegistry.GetValue("log", "0").ToString();
-            if (keyval != "1")
-            {
-                myRegistry.SetValue("log", 1, RegistryValueKind.DWord);
-            }
+  
             
-            
-
-            Console.WriteLine("Reg Added.");
             if(ServiceRun == true)
             {
-
                 System.Diagnostics.Process.Start("CMD.exe", "/c net stop WinDefend");
                 Srvce.Text = "Service is stopped ";
                 Srvce.ForeColor = System.Drawing.Color.Red;
                 ServiceRun = false;
+                Console.WriteLine("Reg Added.");
             }
             else
             {
@@ -104,13 +91,15 @@ namespace WindowsDefenderControler
                 Srvce.Text = "Service is running ";
                 Srvce.ForeColor = System.Drawing.Color.Green;
                 ServiceRun = true;
+                Console.WriteLine("Reg Added.");
             }
             
         }
 
         private void Help_Click(object sender, EventArgs e)
         {
-
+            DialogResult dr = new DialogResult();
+            dr = MessageBox.Show("To use this software, just click on the Start/Stop button to activate or deactivate the service. The initial status of your antivirus service is detected by this software, which you can control by clicking on it.", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
