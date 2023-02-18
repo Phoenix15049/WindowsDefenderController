@@ -9,18 +9,9 @@ This program does not need to be installed. Just download the WindowsDefenederCo
 
 ## Usage
 
-```python
-import foobar
+To use this program, just click on the activation or deactivation button to control your Windows Defender.
 
-# returns 'words'
-foobar.pluralize('word')
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
 
 ## Contributing
 
@@ -29,6 +20,3 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
