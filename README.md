@@ -4,14 +4,23 @@ WindowsDefeneder Controller is a C# desktop application for dealing with Windows
 
 ## Installation
 
-This program does not need to be installed. Just download the WindowsDefenederController.exe file and use it.
+Just download the file manager class and use its functions using the method I will explain.
 
 
 ## Usage
+To use this program, after adding the file manager class, just call the function you need.
+```java
 
-To use this program, just click on the activation or deactivation button to control your Windows Defender.
+# Creates a file in 'Path//Filename.Filetype' 
+file_create(String Path ,String Filename , String FileType)
 
-![](https://github.com/Phoenix15049/WindowsDefenderController/blob/master/Assets/Windefenddemo.gif)
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
 
 
 ## Contributing
