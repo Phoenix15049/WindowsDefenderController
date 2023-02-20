@@ -1,6 +1,6 @@
-# WindowsDefeneder Controller
+# FileManager
 
-WindowsDefeneder Controller is a C# desktop application for dealing with Windows Defender with one click .
+Basic functions needed to work with files in Java plus some additional features.
 
 ## Installation
 
