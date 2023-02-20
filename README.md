@@ -4,23 +4,14 @@ Basic functions needed to work with files in Java plus some additional features.
 
 ## Installation
 
-Just download the file manager class and use its functions using the method I will explain.
+This program does not need to be installed. Just download the WindowsDefenederController.exe file and use it.
 
 
 ## Usage
-To use this program, after adding the file manager class, just call the function you need.
-```java
 
-# Creates a file in 'Path//Filename.Filetype' 
-file_create(String Path ,String Filename , String FileType)
+To use this program, just click on the activation or deactivation button to control your Windows Defender.
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
+![](https://github.com/Phoenix15049/WindowsDefenderController/blob/master/Assets/Windefenddemo.gif)
 
 
 ## Contributing
