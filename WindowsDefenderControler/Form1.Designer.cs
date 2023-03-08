@@ -40,7 +40,7 @@
             this.Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.Start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Start.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start.Location = new System.Drawing.Point(128, 29);
+            this.Start.Location = new System.Drawing.Point(129, 29);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(262, 75);
             this.Start.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.Help.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.Help.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Help.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Help.Location = new System.Drawing.Point(221, 207);
+            this.Help.Location = new System.Drawing.Point(222, 207);
             this.Help.Name = "Help";
             this.Help.Size = new System.Drawing.Size(79, 37);
             this.Help.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.Srvce.AutoSize = true;
             this.Srvce.Font = new System.Drawing.Font("Nexa Rust Sans Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Srvce.ForeColor = System.Drawing.Color.Firebrick;
-            this.Srvce.Location = new System.Drawing.Point(126, 133);
+            this.Srvce.Location = new System.Drawing.Point(127, 133);
             this.Srvce.Name = "Srvce";
             this.Srvce.Size = new System.Drawing.Size(344, 34);
             this.Srvce.TabIndex = 2;
